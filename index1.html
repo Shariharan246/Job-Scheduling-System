@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Scheduling System</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Job Scheduling System</h1>
+    <label for="jobName">Enter Job Name:</label>
+    <input type="text" id="jobName" placeholder="JobName">
+    <label for="jobTime">Enter Job Time:</label>
+    <input type="number" id="jobTime" placeholder="JobTime">
+    <label for="jobPriority">Enter Job Priority:</label>
+    <input type="number" id="jobPriority" placeholder="JobPriority">
+    <button onclick="addJob()">Add Job</button>
+    <br><br>
+    <button onclick="startFCFS()">Start Scheduling</button>
+    <div id="output"></div>
+    <div id="ganttChartContainer"></div>
+
+  </div>
+  <script src="SJF2.JS"></script>
+</body>
+</html>
